@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color:#325343;
+}
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  list-style: none;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #397a4a;
+  font-weight: bold;
+}
+.logo a i{
+  font-size: 30px;
+  font-weight: bold;
+}
+ul li a{
+  text-decoration: none;
+  color: #397a4a;
+  font-weight: bold;
+}
+.bg-image{
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('./images/bg.webp');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-image h2{
+  text-align: center;
+  margin-top: 125px;
+  line-height: 2;
+  font-size: 30px;
+  color: #ffffffdb;
+}
+.btn button{
+  padding: 15px;
+  width: 220px;
+  margin-top: -100px;
+  background-color: #5a9d44;
+  border: none;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.btn button:hover{
+  background-color: white;
+  border: .5px solid #5a9d44;
+}
+.btn button a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all .5s ease-in-out;
+}
+.btn button a:hover{
+  color: #5a9d44;
+}
+.grid{
+  display: grid;
+}
+.justify{
+  justify-content: center;
+}
+.align{
+  align-items: center;
+}
