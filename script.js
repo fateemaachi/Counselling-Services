@@ -114,16 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const cost = calculateCost(type, duration);
 
     summary.innerHTML = `
-      <h2>Session Details</h2>
-      <p><strong>Full Name:</strong> ${name}</p>
-      <p><strong>Age:</strong> ${age} ${age < 18 ? '(Minor)' : ''}</p>
-      <p><strong>Phone No. :</strong> ${phone}</p>
-      <p><strong>Email Address:</strong> ${email}</p>
-      <p><strong>Booking Date:</strong> ${date}</p>
-      <p><strong>Slot:</strong> ${slot}</p>
-      <p><strong>Type of Counselling:</strong> ${type}</p>
-      <p><strong>Duration:</strong> ${duration} minutes</p>
-      <p><strong>Counselor:</strong> ${counselor}</p>
+      <h2>Session Details</h2><br/>
+      <p><strong>Full Name:</strong> ${name}</p><br/>
+      <p><strong>Age:</strong> ${age} ${age < 18 ? '(Minor)' : ''}</p><br/>
+      <p><strong>Phone No. :</strong> ${phone}</p><br/>
+      <p><strong>Email Address:</strong> ${email}</p><br/>
+      <p><strong>Booking Date:</strong> ${date}</p><br/>
+      <p><strong>Slot:</strong> ${slot}</p><br/>
+      <p><strong>Type of Counselling:</strong> ${type}</p><br/>
+      <p><strong>Duration:</strong> ${duration} minutes</p><br/>
+      <p><strong>Counselor:</strong> ${counselor}</p><br/>
       <p><strong>Total Cost:</strong> NGN ${cost.toFixed(2)}</p>
     `;
     document.getElementById('bookingForm').style.display = 'none';
