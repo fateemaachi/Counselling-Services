@@ -10,7 +10,7 @@ nav{
   background-color:#325343;
   margin-bottom: 20px;
 }
-ul{
+nav ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -26,12 +26,12 @@ ul{
   font-size: 30px;
   font-weight: bold;
 }
-ul li a{
+nav ul li a{
   text-decoration: none;
   color: #397a4a;
   font-weight: bold;
 }
-ul li a:hover{
+nav ul li a:hover{
   text-decoration: underline;
   color: #397a4a;
   font-weight: bold;
@@ -91,6 +91,57 @@ button:hover {
   background-color: #45a049;
 }
 
+footer{
+  width: 100%;
+  background-color: #325343;
+}
+.footer-grid{
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 40px;
+}
+.footer-logo p{
+  margin-top: 18px;
+}
+.footer-logo a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #5ea446;
+  font-weight: bold;
+}
+.socials i{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  color: white;
+  transition: color .5s ease-in-out;
+}
+.socials i:hover{
+  color: #5ea446;
+  cursor: pointer;
+}
+.contact h4,.links h4, .work-hrs h4{
+  color: #5ea446;
+  margin-bottom: 20px;
+}
+.contact div p, .work-hrs div p{
+  margin-bottom: 20px;
+  color: #191b22;
+}
+.links ul{
+  list-style: none;
+  padding: 0;
+}
+.links li, .links li a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #191b22;
+}
+
 #summary {
   margin-top: 20px;
   background-color: #fff;
@@ -102,4 +153,34 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  nav{
+   display: none;
+  }
+  .center{
+    margin-top: 100px;
+  }
+  footer{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav{
+    width: 99%;
+    padding: 20px 6px;
+    font-size: 11px;
+    margin-bottom: 100px;
+  }
+  .logo a {
+    font-size: 17px;
+}
+form {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.footer-grid{
+  grid-template-columns: 1fr;
+}
 }

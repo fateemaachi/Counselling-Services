@@ -15,7 +15,7 @@ nav{
   padding: 20px 30px;
   background-color:#325343;
 }
-ul{
+nav ul{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -31,12 +31,12 @@ ul{
   font-size: 30px;
   font-weight: bold;
 }
-ul li a{
+nav ul li a{
   text-decoration: none;
   color: #397a4a;
   font-weight: bold;
 }
-ul li a:hover{
+nav ul li a:hover{
   text-decoration: underline;
   color: #397a4a;
   font-weight: bold;
@@ -113,7 +113,7 @@ ul li a:hover{
   gap: 40px;
 }
 .title{
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .title h3{
   margin: 0;
@@ -168,4 +168,191 @@ ul li a:hover{
 }
 .align{
   align-items: center;
+}
+.bg-image2{
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('./images/Our-Values.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.bg-image2 h4{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffffdb;
+}
+.bg-image2 h2{
+  text-align: center;
+  margin-top: -150px;
+  font-size: 40px;
+  color: #ffffffdb;
+}
+.bg-image2 p{
+  text-align: center;
+  margin-top: -200px;
+  line-height: 1.5;
+  color: #ffffffdb;
+}
+.bg-image3{
+  margin: auto;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('./images/bg3.webp');
+  background-position: bottom -90px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.image img{
+  width: 70%;
+  border-radius: 39% 0% 76% 4% / 81% 100% 0% 9%;
+}
+.message p{
+  width: 70%;
+  margin: auto;
+  font-size: 32px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+.message p span{
+  color: #397a4a;
+}
+.message p a{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 15px;
+  background-color: #a6de9b;
+  color: #397a4a;
+  border-radius: 15px;
+  transition: all .5s ease-in-out;
+}
+.message p a:hover{
+  background-color: #397a4a;
+  color: white;
+}
+footer{
+  width: 100%;
+  background-color: #325343;
+}
+.footer-grid{
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 40px;
+}
+.footer-logo p{
+  margin-top: -3px;
+}
+.footer-logo a, .media-nav a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #5ea446;
+  font-weight: bold;
+}
+.socials i{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  color: white;
+  transition: color .5s ease-in-out;
+}
+.socials i:hover{
+  color: #5ea446;
+  cursor: pointer;
+}
+.contact h4,.links h4, .work-hrs h4{
+  color: #5ea446;
+  margin-bottom: 20px;
+}
+.contact div p, .work-hrs div p{
+  margin-bottom: 20px;
+  color: #191b22;
+}
+.links ul{
+  list-style: none;
+}
+.links li, .links li a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #191b22;
+}
+.media-nav{
+  width: 100vw;
+  padding: 20px;
+  background-color: #325343;
+}
+.book, .services{
+  width: 100vw;
+  padding: 20px;
+  background-color: #5a9d44;
+}
+.book a, .services{
+  text-decoration: none;
+  color: #325343;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contacT{
+  width: 100vw;
+  padding: 20px;
+  background-color: #325343;
+  color: #5a9d44;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hide{
+  display: none;
+  overflow: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .display{
+    display: none;
+  }
+  .hide{
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav{
+    width: 123%;
+    padding: 20px 12px;
+    font-size: 14px;
+  }
+  .bg-image{
+    width: 122%;
+    font-size: 23px;
+  }
+  .btn button {
+    margin-top: -40px;
+}
+.info{
+  width: 122%;
+}
+.title {
+  width: 122%;
+}
+.info2, .info3{
+  width: 117%;
+  grid-template-columns: repeat(2, 180px);
+}
+.bg-image2, .bg-image3{
+  width: 122%;
+}
+footer{
+  width: 122%;
+}
+.footer-grid{
+  grid-template-columns: 1fr;
+}
 }
