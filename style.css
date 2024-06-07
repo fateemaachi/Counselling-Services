@@ -109,7 +109,7 @@ footer{
   padding: 40px;
 }
 .footer-logo p{
-  margin-top: 18px;
+  margin-top: -2px;
 }
 .footer-logo a, .media-nav a{
   text-decoration: none;
