@@ -288,12 +288,12 @@ footer{
   color: #191b22;
 }
 .media-nav{
-  width: 100vw;
+  /* width: 100vw; */
   padding: 20px;
   background-color: #325343;
 }
 .book, .services{
-  width: 100vw;
+  /* width: 100vw; */
   padding: 20px;
   background-color: #5a9d44;
 }
@@ -304,7 +304,7 @@ footer{
   font-weight: bold;
 }
 .contacT{
-  width: 100vw;
+  /* width: 100vw; */
   padding: 20px;
   background-color: #325343;
   color: #5a9d44;
@@ -313,8 +313,8 @@ footer{
 }
 .hide{
   display: none;
-  overflow: hidden;
 }
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .display{
     display: none;
@@ -326,33 +326,32 @@ footer{
 @media screen and (max-width: 768px) {
   nav{
     width: 123%;
-    padding: 20px 12px;
+    padding: 20px 6px;
     font-size: 14px;
   }
   .bg-image{
-    width: 122%;
+    width: 123%;
+  }
+  .bg-image h2 {
     font-size: 23px;
   }
   .btn button {
-    margin-top: -40px;
-}
-.info{
-  width: 122%;
-}
-.title {
-  width: 122%;
-}
+    margin-top: -150px;
+  }
+.info, .title{
+  width: 123%;
+  }
 .info2, .info3{
   width: 117%;
   grid-template-columns: repeat(2, 180px);
-}
+  }
 .bg-image2, .bg-image3{
-  width: 122%;
-}
+  width: 123%;
+  }
 footer{
-  width: 122%;
-}
+  width: 123%;
+  }
 .footer-grid{
   grid-template-columns: 1fr;
-}
+  }
 }
